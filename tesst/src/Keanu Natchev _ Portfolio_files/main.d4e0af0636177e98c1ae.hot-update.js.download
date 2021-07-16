@@ -1,0 +1,439 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/aboutme.js":
+/*!************************!*\
+  !*** ./src/aboutme.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom_Route__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom/Route */ "./node_modules/react-router-dom/Route.js");
+/* harmony import */ var react_router_dom_Route__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_router_dom_Route__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _aboutme_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./aboutme.css */ "./src/aboutme.css");
+/* harmony import */ var _aboutme_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_aboutme_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _pp_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pp.jpg */ "./src/pp.jpg");
+/* harmony import */ var _Natchev_Keanu_Resume_pdf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Natchev_Keanu_Resume.pdf */ "./src/Natchev_Keanu_Resume.pdf");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-dev-runtime */ "./node_modules/react/jsx-dev-runtime.js");
+/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__);
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\Keanu\\git\\WEBSITES\\portfofiolio-draft\\tesst\\src\\aboutme.js";
+
+
+
+
+ // import { Link } from 'react-router-dom/Link';
+
+ // import './pp.jpg';
+
+ // with import
+
+
+
+
+class aboutme extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(...args) {
+    super(...args);
+    this.state = {
+      burger: false,
+      mobileWindow: false,
+      windowSize: window.innerWidth,
+      pictureWidth: "80vw",
+      outOfRange: false,
+      p: window.pageYOffset
+    };
+
+    this.handleBurgerClick = () => {
+      this.setState({
+        burger: !this.state.burger
+      });
+    };
+
+    this.revealScroll = () => {
+      if (window.pageYOffset > 400) {
+        this.setState({
+          outOfRange: true
+        });
+      } else {
+        this.setState({
+          outOfRange: false
+        });
+      }
+    };
+
+    this.goToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      }); // window.scrollToTop();
+    };
+  }
+
+  render() {
+    window.onscroll = () => {
+      this.revealScroll();
+      console.log("ff");
+    };
+
+    return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("div", {
+      className: "wrapper-wrapper",
+      onScroll: this.revealScroll,
+      children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("div", {
+        className: "wrapper",
+        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("h3", {
+          className: "title",
+          children: "About Me"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 77,
+          columnNumber: 21
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("div", {
+          className: this.state.outOfRange ? "scroll-to-top" : "scroll-to-top-hidden",
+          onClick: this.goToTop,
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("div", {
+            className: "arrow-left"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 79,
+            columnNumber: 25
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("div", {
+            className: "arrow-right"
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 80,
+            columnNumber: 25
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 78,
+          columnNumber: 21
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("nav", {
+          className: "navbar",
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("div", {
+            className: "burger",
+            onClick: this.handleBurgerClick,
+            children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("div", {
+              className: this.state.burger ? "burger-slice-open" : "burger-slice"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 85,
+              columnNumber: 29
+            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("div", {
+              className: this.state.burger ? "burger-slice-open" : "burger-slice"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 86,
+              columnNumber: 29
+            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("div", {
+              className: this.state.burger ? "burger-slice-open" : "burger-slice"
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 87,
+              columnNumber: 29
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 83,
+            columnNumber: 25
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("ul", {
+            className: this.state.burger ? "mo" : "mm",
+            children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("li", {
+              children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("a", {
+                children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+                  to: "/",
+                  children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("h1", {
+                    className: "page-title",
+                    children: "Home"
+                  }, void 0, false, {
+                    fileName: _jsxFileName,
+                    lineNumber: 93,
+                    columnNumber: 41
+                  }, this)
+                }, void 0, false, {
+                  fileName: _jsxFileName,
+                  lineNumber: 92,
+                  columnNumber: 37
+                }, this)
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 91,
+                columnNumber: 33
+              }, this)
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 90,
+              columnNumber: 29
+            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("li", {
+              children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("a", {
+                children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+                  to: "/about",
+                  children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("h1", {
+                    className: "page-title",
+                    children: "About Me"
+                  }, void 0, false, {
+                    fileName: _jsxFileName,
+                    lineNumber: 100,
+                    columnNumber: 41
+                  }, this)
+                }, void 0, false, {
+                  fileName: _jsxFileName,
+                  lineNumber: 99,
+                  columnNumber: 37
+                }, this)
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 98,
+                columnNumber: 33
+              }, this)
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 97,
+              columnNumber: 29
+            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("li", {
+              children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("a", {
+                children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+                  to: "/contact",
+                  children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("h1", {
+                    className: "page-title",
+                    children: "Contact"
+                  }, void 0, false, {
+                    fileName: _jsxFileName,
+                    lineNumber: 107,
+                    columnNumber: 41
+                  }, this)
+                }, void 0, false, {
+                  fileName: _jsxFileName,
+                  lineNumber: 106,
+                  columnNumber: 37
+                }, this)
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 105,
+                columnNumber: 33
+              }, this)
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 104,
+              columnNumber: 29
+            }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("li", {
+              children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("a", {
+                children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+                  to: "/projects",
+                  children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("h1", {
+                    className: "page-title",
+                    children: "Projects"
+                  }, void 0, false, {
+                    fileName: _jsxFileName,
+                    lineNumber: 114,
+                    columnNumber: 41
+                  }, this)
+                }, void 0, false, {
+                  fileName: _jsxFileName,
+                  lineNumber: 113,
+                  columnNumber: 37
+                }, this)
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 112,
+                columnNumber: 33
+              }, this)
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 111,
+              columnNumber: 29
+            }, this)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 89,
+            columnNumber: 25
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 82,
+          columnNumber: 21
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("div", {
+          className: "about-user-info",
+          children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("div", {
+            className: "about-user-info-picture",
+            children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("img", {
+              className: "profile-picture",
+              src: _pp_jpg__WEBPACK_IMPORTED_MODULE_5__["default"]
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 122,
+              columnNumber: 29
+            }, this)
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 121,
+            columnNumber: 25
+          }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("div", {
+            className: "about-user-info-text-container",
+            children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("div", {
+              className: "about-user-info-text",
+              children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("p", {
+                children: "Hello there,"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 126,
+                columnNumber: 33
+              }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("p", {
+                children: "I'm Keanu Natchev"
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 129,
+                columnNumber: 33
+              }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("p", {
+                children: "Software Engineering Student at McGill University completing my third year."
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 132,
+                columnNumber: 33
+              }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("p", {
+                children: "I am a very passionate about software development and design which you can check out by looking at projects I have completed in the past."
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 135,
+                columnNumber: 33
+              }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("div", {
+                className: "resume-button",
+                children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("a", {
+                  className: "resume-link",
+                  href: _Natchev_Keanu_Resume_pdf__WEBPACK_IMPORTED_MODULE_6__["default"],
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                  children: "View Resume"
+                }, void 0, false, {
+                  fileName: _jsxFileName,
+                  lineNumber: 139,
+                  columnNumber: 37
+                }, this)
+              }, void 0, false, {
+                fileName: _jsxFileName,
+                lineNumber: 138,
+                columnNumber: 33
+              }, this)]
+            }, void 0, true, {
+              fileName: _jsxFileName,
+              lineNumber: 125,
+              columnNumber: 29
+            }, this)
+          }, void 0, false, {
+            fileName: _jsxFileName,
+            lineNumber: 124,
+            columnNumber: 25
+          }, this)]
+        }, void 0, true, {
+          fileName: _jsxFileName,
+          lineNumber: 120,
+          columnNumber: 21
+        }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_7__["jsxDEV"])("div", {
+          className: "about-user-info"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 144,
+          columnNumber: 21
+        }, this)]
+      }, void 0, true, {
+        fileName: _jsxFileName,
+        lineNumber: 76,
+        columnNumber: 17
+      }, this)
+    }, void 0, false, {
+      fileName: _jsxFileName,
+      lineNumber: 74,
+      columnNumber: 13
+    }, this); // }
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (aboutme);
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ })
+
+})
+//# sourceMappingURL=main.d4e0af0636177e98c1ae.hot-update.js.map
