@@ -3,12 +3,36 @@
 } */
 
 .wrapper-home {
-    background-color: white;
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
+    opacity: 1;
+    transition: 10s;
+    background-color: aqua;
 }
+
+.wrapper-home-white {
+    opacity: 0;
+    background-color: yellowgreen;
+}
+
+
+/* .wrapper-home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    transition: 1s;
+}
+
+.wrapper-home-white {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+} */
+
 
 .user-info {
     width: 61.8%;
@@ -45,4 +69,12 @@
 
 .menu-element:last-child {
     border-bottom: visible;
+}
+
+.profile-picture {
+    height: 90%;
+    border: 1px solid black;
+    padding: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
