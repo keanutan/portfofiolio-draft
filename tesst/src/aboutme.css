@@ -1,14 +1,3 @@
-/* body {
-    overflow: auto;
-} */
-
-.wrapper-wrapper {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    /* overflow: scroll; */
-}
-
 .wrapper {
     width: 100%;
     /* height: 200%; */
@@ -22,11 +11,12 @@
     /* justify-content: center; */
     /* overflow: visible; */
     opacity: 1;
-    transition: 1s;
+    transition: 0.3s;
 }
 
 .wrapper-white {
     opacity: 0;
+    transition: 0.3s;
     /* background-color: blue; */
 }
 
@@ -397,7 +387,7 @@ a {
     }
 }
 
-.work-experience, .personal-projects {
+.work-experience, .personal-projects, .university-projects {
     width: 80vw;
     background-color: rgb(88, 99, 68);
     display: flex;
@@ -409,23 +399,54 @@ a {
     max-height: 90%;
 }
 
-.work-experience-content-entry-title, .personal-projects-content-entry-title {
+.work-experience-content-entry-title, 
+.personal-projects-content-entry-title, 
+.university-projects-content-entry-title,
+.university-projects-content-entry-class-title
+{
+    /* margin-top: 0px; */
     margin-left: 10px;
+    margin-bottom: 10px;
     width: fit-content;
     display: inline-block;
 }
+.university-projects-content-entry-class-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
 
-.work-experience-content-entry-date, .personal-projects-content-entry-date {
+
+.work-experience-content-entry-date,
+ .personal-projects-content-entry-date,
+ .university-projects-content-entry-date
+ {
     float: right;
     margin-right: 20px;
 }
 
-.work-experience-content-entry-list, .personal-projects-content-entry-list {
+.work-experience-content-entry-list,
+.personal-projects-content-entry-list,
+.university-projects-content-entry-list
+ {
     list-style-type: "- ";
 }
 
-.work-experience-content-entry-list-element, .personal-projects-content-entry-list-element {
+.work-experience-content-entry-list-element,
+.personal-projects-content-entry-list-element,
+.university-projects-content-entry-list-element
+ {
     margin-left: 20px;
     margin-right: 10px;
+    text-align: justify;
+}
+
+.university-projects-content-entry-tools {
+    height: 6vh;
+    
+}
+
+.university-projects-content-entry-tools-image {
+    height: 6vh;
+    margin-left: 10px;
 }
