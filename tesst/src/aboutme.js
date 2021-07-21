@@ -7,8 +7,17 @@ import Route from 'react-router-dom/Route';
 import './aboutme.css';
 // import './pp.jpg';
 import pic from './pp.jpg'; // with import
+import webots_logo from './webots.png'; // with import
+import leocad_logo from './leocad.svg'; // with import
+import anime_logo from './anime.svg'; // with import
+import react_logo from './react.svg'; // with import
+import vue_logo from './vue.svg'; // with import
+import heroku_logo from './heroku.svg'; // with import
+import springboot_logo from './springboot.svg'; // with import
+
 import resume from './Natchev_Keanu_Resume.pdf';
 import react from './react.png'
+
 
 
 class aboutme extends Component {
@@ -190,8 +199,17 @@ class aboutme extends Component {
                             <p>
                                 I am a very passionate about software development and design which you can check out by looking at projects I have completed in the past.
                             </p>
-                            <div className="resume-button">
-                                <a className="resume-link" href={resume} target='_blank' rel='noopener noreferrer'>View Resume</a>
+                            <div className="resume-contact-button-section">
+                                <div className="resume-button">
+                                    <a className="resume-link" href={resume} target='_blank' rel='noopener noreferrer'>View Resume</a>
+                                </div>
+                                <div className="contact-me-button">
+                                    <Link to="/contact">
+                                        <a className="contact-me-link">
+                                            Contact Me
+                                        </a>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -229,6 +247,7 @@ class aboutme extends Component {
                                 <h4 className="technical-skills-section-list-title">Frameworks</h4>
                                 <ul className="technical-skills-section-list">
                                     <li className="technical-skills-section-list-element">React.js</li>
+                                    <li className="technical-skills-section-list-element">Vue.js</li>
                                 </ul>
                             </div>
                             <div className="technical-skills-section">
@@ -293,28 +312,12 @@ class aboutme extends Component {
                                     <li className="university-projects-content-entry-list-element" >Worked on the <strong>Array</strong> and <strong>Doubly Linked List</strong> data structure pages of the website.</li>
                                 </ul>
                                 <div className="university-projects-content-entry-tools">
-                                    {/* <img className="university-projects-content-entry-tools-image" src={react}></img> */}
+                                    <img className="university-projects-content-entry-tools-image" src={react_logo} />
 
-                                    <svg className="university-projects-content-entry-tools-image" xmlns="http://www.w3.org/2000/svg" viewBox="-11.5 -10.23174 23 20.46348">
-                                        <title>React Logo</title>
-                                        <circle cx="0" cy="0" r="2.05" fill="#61dafb" />
-                                        <g stroke="#61dafb" stroke-width="1" fill="none">
-                                            <ellipse rx="11" ry="4.2" />
-                                            <ellipse rx="11" ry="4.2" transform="rotate(60)" />
-                                            <ellipse rx="11" ry="4.2" transform="rotate(120)" />
-                                        </g>
-                                    </svg>
 
-                                    <svg className="university-projects-content-entry-tools-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240">
-                                        <g id="anime-mini-logo" fill="none" fill-rule="evenodd" stroke-linecap="square">
-                                            <path id="Path-18-Copy-66" stroke="#F6F4F2" stroke-width="40" d="M30 20h130c9.996 0 10 40 10 60v140H41c-11.004 0-11-40-11-60s-.004-60 10-60h110" />
-                                            <path id="Path-18-Copy-67" stroke="#F6F4F2" stroke-width="40" d="M850 140h110c10 0 10-40 10-60s0-60-10-60H840c-10 0-10 40-10 60v80c0 20 0 60 10 60h130" />
-                                            <path id="Path-18-Copy-68" stroke="#F6F4F2" stroke-width="40" d="M430 100v120" />
-                                            <path id="Path-18-Copy-69" stroke="#F6F4F2" stroke-width="40" d="M430 20.2v.6" />
-                                            <path id="Path-18-Copy-71" stroke="#F6F4F2" stroke-width="40" d="M370 220V80c0-20 0-60-10-60H240c-10 0-10 40-10 60v140" />
-                                            <path id="Path-18-Copy-74" stroke="#F6F4F2" stroke-width="40" d="M770 220V80c0-20 0-60-10-60H500c-10 0-10 40-10 60v140" />
-                                        </g>
-                                    </svg>
+                                    <img className="university-projects-content-entry-tools-image" src={anime_logo} />
+
+
                                 </div>
                             </div>
                             <div className="university-projects-content-entry">
@@ -328,7 +331,12 @@ class aboutme extends Component {
                                     <li className="university-projects-content-entry-list-element">Was responsible for the hardware design development in <strong>LeoCAD/Webots</strong> as well as the <strong>hardware documentation</strong>.</li>
                                     <li className="university-projects-content-entry-list-element">Implemented the localization class of the robot controller in <strong>Java</strong> and optimized <strong>threading</strong> between all other classes.</li>
                                 </ul>
-                                <div className="university-projects-content-entry-tools"></div>
+                                <div className="university-projects-content-entry-tools">
+
+                                            <img className="university-projects-content-entry-tools-image" src={webots_logo} />
+                                            <img className="university-projects-content-entry-tools-image" src={leocad_logo} />
+                                
+                                </div>
                             </div>
                             <div className="university-projects-content-entry">
                                 <div className="university-projects-content-entry-title-date-section">
@@ -343,11 +351,10 @@ class aboutme extends Component {
                                     <li className="university-projects-content-entry-list-element">Implemented the website’s frontend with <strong>Vue.js</strong>, <strong>NPM</strong>, and <strong>JavaScript</strong>.</li>
                                 </ul>
                                 <div className="university-projects-content-entry-tools">
-                                    <svg className="university-projects-content-entry-tools-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 261.76 226.69">
-                                        <path d="M161.096.001l-30.225 52.351L100.647.001H-.005l130.877 226.688L261.749.001z" fill="#41b883" />
-                                        <path d="M161.096.001l-30.225 52.351L100.647.001H52.346l78.526 136.01L209.398.001z" fill="#34495e" />
-                                    </svg>
-                                    <svg className="university-projects-content-entry-tools-image" width="62" height="11" viewBox="0 0 62 11" xmlns="http://www.w3.org/2000/svg"><title>HEROKU</title><path d="M0 9.802h2.6V5.915h3.198v3.887h2.6V.182h-2.6v3.575H2.6V.182H0v9.62zm11.374 0h7.085V7.709h-4.485V5.928h3.042V3.9h-3.042V2.34h4.264V.182h-6.864v9.62zm9.567 0h2.548V6.461h.715l1.859 3.341h2.756l-2.041-3.679c1.26-.429 1.898-1.3 1.898-2.808 0-2.314-1.508-3.133-3.978-3.133H20.94v9.62zm2.548-5.317V2.288h1.118c1.066 0 1.534.286 1.534 1.092s-.468 1.105-1.534 1.105h-1.118zm12.257 5.499c2.314 0 4.72-1.469 4.72-4.992C40.465 1.469 38.06 0 35.745 0c-2.327 0-4.732 1.469-4.732 4.992 0 3.523 2.405 4.992 4.732 4.992zm0-2.08c-1.365 0-2.132-1.144-2.132-2.912s.767-2.847 2.132-2.847c1.352 0 2.12 1.079 2.12 2.847s-.768 2.912-2.12 2.912zm7.24 1.898h2.6v-2.99l.741-.858 2.275 3.848h2.938l-3.523-5.824L51.254.182h-3.016l-2.652 3.484V.182h-2.6v9.62zm14.624.143c2.808 0 4.03-1.456 4.03-4.004V.182h-2.548v5.746c0 1.326-.416 1.924-1.456 1.924s-1.469-.598-1.469-1.924V.182h-2.6v5.759c0 2.548 1.235 4.004 4.043 4.004z" fill="%238460AA" fill-rule="evenodd"></path></svg>
+                                    <img className="university-projects-content-entry-tools-image" src={vue_logo} />
+                                    <img className="university-projects-content-entry-tools-image" src={heroku_logo} />
+                                    <img className="university-projects-content-entry-tools-image" src={springboot_logo} />
+
                                 </div>
                             </div>
                             <div className="university-projects-content-entry">
@@ -362,6 +369,32 @@ class aboutme extends Component {
                                     <li className="university-projects-content-entry-list-element">Implemented a playback feature to watch saved games from start to finish.</li>
                                     <li className="university-projects-content-entry-list-element">Used <strong>Umple</strong> with <strong>UML Model</strong> for code generation, <strong>Gherkin</strong> for writing testing scenarios, <strong>Cucumber</strong> for running test suites, and <strong>Java Swing/2D</strong> for the development of the user interface.</li>
                                 </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="education">
+                        <h3 className="education-title">Education</h3>
+                        <div className="education-content">
+                            <div className="education-content-entry">
+                                <div className="education-content-entry-title-date-section">
+                                    <h4 className="education-content-entry-title">Bachelor of Software Engineering</h4>
+                                    <h4 className="education-content-entry-date">September 2017 - Present</h4>
+                                </div>
+                                <h5 className="education-content-entry-class-title"><i>McGill University, Montreal, QC</i></h5>
+                            </div>
+                            <div className="education-content-entry">
+                                <div className="education-content-entry-title-date-section">
+                                    <h4 className="education-content-entry-title">College Diploma in Pure and Applied Sciences</h4>
+                                    <h4 className="education-content-entry-date">August 2017</h4>
+                                </div>
+                                <h5 className="education-content-entry-class-title"><i>Dawson College, Montreal, QC</i></h5>
+                            </div>
+                            <div className="education-content-entry">
+                                <div className="education-content-entry-title-date-section">
+                                    <h4 className="education-content-entry-title">High School Studies Diploma</h4>
+                                    <h4 className="education-content-entry-date">June 2015</h4>
+                                </div>
+                                <h5 className="education-content-entry-class-title"><i>Collège Jean-Eudes, Montreal, QC</i></h5>
                             </div>
                         </div>
                     </div>
